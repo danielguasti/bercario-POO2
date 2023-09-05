@@ -2,6 +2,55 @@
 # Sistema de Berçário
 
 Este é um sistema que gerencia informações de um berçário. Ele utiliza tabelas para armazenar objetos com características como nome, data de nascimento, altura, entre outras. As tabelas são interconectadas para garantir o funcionamento adequado do sistema.
+#### Alunos: Marcos Daniel Guasti Machaco, Vladimir Gama Batista e Yan Zumerle Rangel
+## UML
+
+A Unified Modeling Language (UML) é uma linguagem de modelagem visual que permite representar sistemas de software de forma abstrata, facilitando o entendimento e a comunicação entre os envolvidos no desenvolvimento de software. Vou explicar como você pode criar um modelo UML simples para representar o projeto de informatização do berçário descrito.
+
+### Diagrama de Classes:
+O diagrama de classes é uma parte fundamental da UML e permite representar as classes, seus atributos e relacionamentos em um sistema. No seu caso, as classes principais seriam Bebê, Mãe e Médico. Vamos começar a criar um esboço desse diagrama:
+
+### Classe Bebê:
+### Atributos:
+
+##### Nome: string
+##### Data de Nascimento: data
+##### Peso do Nascimento: float
+##### Altura: float
+
+### Relacionamentos:
+##### Mãe (Associação com a classe Mãe)
+##### Médico (Associação com a classe Médico)
+
+
+### Classe Mãe:
+#### Atributos:
+##### Nome: string
+##### Endereço: string
+##### Telefone: string
+##### Data de Nascimento: data
+
+### Relacionamentos:
+##### Bebês (Associação com a classe Bebê, pois uma mãe pode ter vários bebês)
+
+### Classe Médico:
+#### Atributos:
+##### CRM: string
+##### Nome: string
+##### Telefone Celular: string
+##### Especialidade: string
+##### Relacionamentos:
+
+### Bebês (Associação com a classe Bebê, pois um médico pode ter participado do parto de vários bebês)
+Isso representa uma visão simplificada do seu sistema em termos de classes e relacionamentos. Lembre-se de que a UML é uma linguagem muito versátil, e você pode adicionar mais detalhes, como métodos e multiplicidades (quantos objetos de uma classe estão relacionados a outros), conforme necessário.
+
+### Diagrama de Casos de Uso:
+Além do diagrama de classes, você também pode criar um diagrama de casos de uso para identificar as principais funcionalidades do sistema, como "Registrar Bebê", "Registrar Mãe" e "Registrar Médico". Esses casos de uso podem ser representados por elipses no diagrama, e as relações entre eles podem ser mostradas por setas para indicar o fluxo de interação do usuário com o sistema.
+
+### Diagrama de Sequência:
+Você pode criar diagramas de sequência para descrever como as classes interagem em cenários específicos. Por exemplo, você pode criar um diagrama de sequência para mostrar como um bebê é registrado no sistema quando nasce, envolvendo as classes Bebê, Mãe e Médico.
+
+Esses são apenas exemplos básicos de como você pode usar a UML para representar o projeto de informatização do berçário. Dependendo da complexidade do sistema e das necessidades de documentação, você pode adicionar mais detalhes e diagramas específicos.
 
 ## Começando
 
@@ -93,9 +142,6 @@ Você pode escrever consultas de criação de tabelas e inserção de dados em s
 
 Executando o projeto
 Para executar seu projeto, navegue até o diretório onde está localizado seu arquivo TypeScript e execute:
+npx ts-node projeto.ts
 
 
-npx ts-node nome-do-arquivo.ts
-Substitua nome-do-arquivo.ts pelo nome do seu arquivo TypeScript com as consultas.
-
-Lembre-se de adicionar um console.log no final da função assíncrona para visualizar os resultados.
