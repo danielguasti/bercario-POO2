@@ -132,6 +132,7 @@ main()
   .finally(async () => {
     await prisma.$disconnect()
   })
+
 Prisma Migrate
 Use o Prisma Migrate para criar o banco de dados com base no modelo definido no arquivo schema.prisma. Execute o seguinte comando:
 
